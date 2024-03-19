@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[22]:
-
 
 import numpy as np
 from sklearn.ensemble import IsolationForest
@@ -123,17 +118,3 @@ def KI(X,k,t):
                 x=den2[:,[i]].reshape((1,X.shape[0]))[0]
                 idx_x=np.argsort(x)
     return -IsolationForest().fit(X).score_samples(X)
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
